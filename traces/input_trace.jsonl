@@ -1,0 +1,9 @@
+{"run_id": "run-valid-001", "stage": "schema", "status": "accepted"}
+{"run_id": "run-valid-001", "stage": "normalization", "status": "accepted"}
+{"run_id": "run-valid-001", "stage": "validation", "status": "accepted"}
+{"run_id": "run-valid-001", "stage": "context_enrichment", "status": "accepted", "provenance": {"request_id": "application", "text": "user", "tenant": "trusted_context", "user": "trusted_context", "locale": "trusted_context", "policy_context": "trusted_context"}}
+{"event": "input_pipeline_complete", "run_id": "run-valid-001", "status": "accepted", "request_id": "req-006", "next_action": "continue", "steps": 5, "retries": 0}
+{"run_id": "run-rejected-001", "stage": "schema", "status": "accepted"}
+{"run_id": "run-rejected-001", "stage": "normalization", "status": "accepted"}
+{"event": "input_rejected", "run_id": "run-rejected-001", "status": "rejected", "reason": "text attempts to override protected context", "next_action": "stop", "steps": 3, "retries": 0}
+{"run_id": "run-secret-001", "api_key": "***REDACTED***", "status": "rejected"}
